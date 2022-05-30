@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import mackbook from "../../assets/hero-image/mackbook.png"
 import useReviews from '../../hooks/useReviews'
 import Review from "../Review/Review"
@@ -6,6 +7,13 @@ import "./Home.css"
 const Home = () => {
     const [reviews] = useReviews()
     const showThree = reviews.slice(0, 3)
+
+    // HANDLE SEE ALL REVIEW BUTTON
+    const navigate = useNavigate()
+    const handleSeeAllRevBtn = () => {
+        navigate("/reviews")
+    }
+
     return (
         <main>
             {/* HERO SECTION START */}
@@ -30,19 +38,19 @@ const Home = () => {
                 </div>
             </div>
             {/* HERO SECTION END */}
-         
+
 
             {/* REVIEW SRCTION START  */}
             <article className='review-section'>
-                  <h1 className='review-title'>Customer Reviews(3)</h1>
-                  <div className="reviews">
-                       {showThree.map(revi => <Review key={revi.id} revi={revi}/>)}
-                       
-                  </div>
+                <h1 className='review-title'>Customer Reviews(3)</h1>
+                <div className="reviews">
+                    {showThree.map(revi => <Review key={revi.id} revi={revi} />)}
 
-                  <div className="all-rev-btn">
-                      <button>See All Reviews</button>
-                  </div>
+                </div>
+
+                <div className="all-rev-btn">
+                    <button onClick={handleSeeAllRevBtn}>See All Reviews</button>
+                </div>
             </article>
             {/* REVIEW SECTION END  */}
         </main>
