@@ -6,7 +6,7 @@ const Home = () => {
     const [reviews, setReviews] = useReviews()
     return (
         <main>
-            // HERO SECTION START//
+            {/* HERO SECTION START */}
             <div className='main-container'>
                 <div className="hero">
                     <div className="hero-info">
@@ -27,7 +27,7 @@ const Home = () => {
                     <img src={mackbook} alt="" />
                 </div>
             </div>
-            // HERO SECTION END//
+            {/* HERO SECTION END */}
          
             <article>
                
