@@ -35,7 +35,8 @@ main {
 .hero-btn button {
     border: none;
     border-radius: 0.5rem;
-    color: darkblue;
+    background-color: purple;
+    color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     font-weight: 900;
@@ -68,4 +69,18 @@ main {
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
     margin-top: 4rem;
+}
+
+
+.all-rev-btn button{
+    border: none;
+    border-radius: 0.5rem;
+    background-color: purple;
+    display: block;
+    margin: 4rem auto;
+    color: #ffffff;
+    padding: 0.5rem 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    
 }

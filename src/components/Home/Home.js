@@ -39,6 +39,10 @@ const Home = () => {
                        {showThree.map(revi => <Review key={revi.id} revi={revi}/>)}
                        
                   </div>
+
+                  <div className="all-rev-btn">
+                      <button>See All Reviews</button>
+                  </div>
             </article>
             {/* REVIEW SECTION END  */}
         </main>
