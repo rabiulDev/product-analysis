@@ -1,0 +1,16 @@
+.blogs-container{
+    display: flex;
+    justify-content: center;
+}
+
+.blogs{
+    width: 50%;
+    margin: 4rem 0;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 0.5rem;
+    padding: 4rem;
+}
+.blogs p{
+    text-align: justify;
+  text-justify: inter-word;
+}
