@@ -46,3 +46,26 @@ main {
 .hero-img img {
     width: 100%;
 }
+
+
+
+
+
+.review-section{
+    margin-top: 4rem;
+}
+
+.review-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+
+.reviews{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-top: 4rem;
+}

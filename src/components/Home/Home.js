@@ -1,9 +1,11 @@
 import React from 'react'
 import mackbook from "../../assets/hero-image/mackbook.png"
 import useReviews from '../../hooks/useReviews'
+import Review from "../Review/Review"
 import "./Home.css"
 const Home = () => {
-    const [reviews, setReviews] = useReviews()
+    const [reviews] = useReviews()
+    const showThree = reviews.slice(0, 3)
     return (
         <main>
             {/* HERO SECTION START */}
@@ -29,10 +31,16 @@ const Home = () => {
             </div>
             {/* HERO SECTION END */}
          
-            <article>
-               
-            </article>
 
+            {/* REVIEW SRCTION START  */}
+            <article className='review-section'>
+                  <h1 className='review-title'>Customer Reviews(3)</h1>
+                  <div className="reviews">
+                       {showThree.map(revi => <Review key={revi.id} revi={revi}/>)}
+                       
+                  </div>
+            </article>
+            {/* REVIEW SECTION END  */}
         </main>
     )
 }
