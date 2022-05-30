@@ -5,6 +5,7 @@ import Reviews from "../Reviews/Reviews"
 import Dashboard from "../Dashboard/Dashboard"
 import Blogs from "../Blogs/Blogs"
 import About from "../About/About"
+import NotFound from '../NotFound/NotFound'
 
 const Router = () => {
   return (
@@ -14,6 +15,7 @@ const Router = () => {
         <Route path='/dashboard' element={<Dashboard/>} />
         <Route path='/blogs' element={<Blogs/>} />
         <Route path='/about' element={<About/>} />
+        <Route path='*' element={<NotFound/> } />
     </Routes>
   )
 }
