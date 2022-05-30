@@ -1,0 +1,45 @@
+[
+    {   
+        "id": "1",
+        "name": "Shahed",
+        "review": "The best laptop ever I used",
+        "ratings": "5" 
+    },
+
+    {   
+        "id": "2",
+        "name": "Nobin",
+        "review": "Awesome performance",
+        "ratings": "4.5" 
+    },
+
+    {   
+        "id": "3",
+        "name": "Yousuf",
+        "review": "My best life partner",
+        "ratings": "5" 
+    },
+
+    {   
+        "id": "4",
+        "name": "Rezaul",
+        "review": "Thats coool dudes",
+        "ratings": "4.3" 
+    },
+
+    {   
+        "id": "5",
+        "name": "Hasibul",
+        "review": "My dream laptop",
+        "ratings": "5" 
+    },
+
+    {   
+        "id": "6",
+        "name": "Rajib",
+        "review": "Thats cute",
+        "ratings": "5" 
+    }
+
+
+]

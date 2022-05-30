@@ -1,7 +1,9 @@
 import React from 'react'
 import mackbook from "../../assets/hero-image/mackbook.png"
+import useReviews from '../../hooks/useReviews'
 import "./Home.css"
 const Home = () => {
+    const [reviews, setReviews] = useReviews()
     return (
         <main className='main-container'>
             <div className="hero">
@@ -23,7 +25,7 @@ const Home = () => {
                 <img src={mackbook} alt="" />
             </div>
 
-
+           {reviews.length}
         </main>
     )
 }
